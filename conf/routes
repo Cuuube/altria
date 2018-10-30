@@ -9,6 +9,14 @@ module:testrunner
 
 GET     /                                       App.Index
 
+
+# apis
+GET     /api/v1/favorites                       Api.Favorites
+GET     /api/v1/favorites/:channel              Api.FavoritesOnChannel
+
+
+
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
